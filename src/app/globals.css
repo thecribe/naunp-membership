@@ -29,3 +29,17 @@ body {
 .smooth_transition {
   @apply transition-all duration-300;
 }
+
+/* Dropdwon settings */
+
+.parent_dropdown {
+  @apply relative;
+}
+
+.parent_dropdown:hover .child_dropdown {
+  @apply block;
+}
+
+.child_dropdown {
+  @apply absolute left-0 top-[100%] hidden overflow-auto max-h-[300px] rounded-sm shadow-sm border-2 border-gray-200 z-10;
+}
